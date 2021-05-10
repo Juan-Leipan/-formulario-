@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulario Ong</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="validarRUT.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#basic-form").validate();
+        });
+    </script>
+
+
+</head>
+
+<body>
+    
+    <a href="menu.html" target="_blank"> <input type="button" value="inicio"> </a>
+
+    <H1 class="centrado">Ong Ayuda a un peludo</H1>
+    <form id="basic-form" action="" method="post">
+        
+        <p class="text-center"><label for="name">Nombre Completo</label>
+            <input id="name" name="name" minlength="4" type="text" required>
+        </p>
+
+        <p class="text-center"><label for="email">E-Mail</label>
+            <input id="email" type="email" name="email" required>
+        </p>
+        
+        <p class="text-center"> <label for="num2">fono(op)</label>
+            <input type="number" class="form-control" id="num2" name="num2"/>
+        </p>
+
+        <p class="text-center"><label for="name">Ingresa cuidad</label>
+            <input id="name" name="name" minlength="4" type="text" required>
+        </p>
+
+        <br>en que le gustaria participar</br>
+        <textarea name="" id="" cols="50" rows="4"></textarea>
+      
+
+
+        <p>
+            <input class="submit" type="submit" value="Enviar">
+        </p>
+        
+        <p>
+            <input class="submit" type="reset" value="Limpiar">
+        </p>
+        
+        
+
+        
+    </form>
+
+
+</body>
+
+</html>
